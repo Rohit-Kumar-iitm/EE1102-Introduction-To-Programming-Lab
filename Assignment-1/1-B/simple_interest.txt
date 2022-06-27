@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+{
+	int p, t;
+	float m;
+	printf("Enter the required details:\n");
+	printf("Principal (Rs): ");
+	scanf("%d", &p)
+	printf("Rate of interest (%%): ");
+	scanf("%f", &r);
+	printf("Number of days: ");
+	scanf("%d", &t);
+	m = p * r / 100 * (t / 365);
+	printf("Maturity amount is Rs. %f\n", m);
+	return 0;
+}

@@ -1,0 +1,27 @@
+ #include <stdio.h>
+                                     // "int main()" function declaration//
+{
+	int p, t;
+	float m;                        //float m,r; float variable r was not declared//
+	printf("Enter the required details:\n");
+	printf("Principal (Rs): ");
+	scanf("%d", &p)                 //sentence is not closed using semicolon(;) corrected form is scanf("%d", &p);
+	printf("Rate of interest (%%): ");
+	scanf("%f", &r);
+	printf("Number of days: ");
+	scanf("%d", &t);
+	m = p * r / 100 * (t / 365);
+	printf("Maturity amount is Rs. %f\n", m);
+	return 0;
+}
+
+Above is the given program.
+The mistakes are found in program and are : 
+In 2nd line main() declaration is not done , which can be corrected by writing 'int main()'.
+In 5th line the float variable r was not declared , which is used in program . That can be corrected bu writing float m,r; instead of float m;.
+In 8th line the scanf syntax is not closed by a semicolon , which can be corrected by using ; and write it as scanf("%d", &p);.
+So correction are : 
+In 2nd line , int main()            //declare it before curly brackets '{'//
+In 5th line , float m,r;
+In 8th line , scanf("%d", &p);
+
